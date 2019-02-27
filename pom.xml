@@ -25,7 +25,7 @@
 			</execution>
 		</executions>
 		<configuration>
-			<mainClass>com.applitools.quickstarts.src.main.java.com.applitools.quickstarts.OutlookOffice</mainClass>
+			<mainClass>com.applitools.quickstarts.OutlookOffice</mainClass>
 		</configuration>
 
 	</plugin>
