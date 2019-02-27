@@ -1,6 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.applitools.quickstarts</groupId>
 	<artifactId>Java-tutorial</artifactId>
@@ -8,6 +9,31 @@
 	<version>1.0</version>
 	<name>Java-tutorial</name>
 	<url>http://maven.apache.org</url>
+	<build>
+<plugins>
+
+	<plugin>
+		<groupId>org.codehaus.mojo</groupId>
+		<artifactId>exec-maven-plugin</artifactId>
+		<version>1.6.0</version>
+		<executions>
+			<execution>
+				<id>xml-gen</id>
+				<goals>
+					<goal>java</goal>
+				</goals>
+			</execution>
+		</executions>
+		<configuration>
+			<mainClass>com.applitools.quickstarts.src.main.java.com.applitools.quickstarts.OutlookOffice</mainClass>
+		</configuration>
+
+	</plugin>
+
+
+</plugins>
+</build>
+
 
 	<!-- Use JDK 1.8 -->
 	<properties>
